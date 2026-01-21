@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #393b58;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    
+    padding-top: 40px;
+}
+
+h3 {
+    color: #0e1353;
+}
+
+#home-score, #away-score {
+    font-size: 48px;
+    margin: 10px 0;
+    color: #0e1353;
+}
+
+.container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px; 
+}
+
+.Scoreboard {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0e1353;
+    color: white;
+    cursor: pointer;
+}
+
+.team {
+    background-color: #aaaee7;
+    padding: 5px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+#reset {
+    margin: 20px 0 0 0;
+}
+    
