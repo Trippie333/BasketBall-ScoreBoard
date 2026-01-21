@@ -10,6 +10,9 @@ const homeAdd3Btn = document.getElementById('home-add-3');
 const awayAdd1Btn = document.getElementById('away-add-1');
 const awayAdd2Btn = document.getElementById('away-add-2');
 const awayAdd3Btn = document.getElementById('away-add-3');
+const homeRemove1Btn = document.getElementById('home-remove-1')
+const awayRemove1Btn = document.getElementById("away-remove-1");
+
 const resetBtn = document.getElementById('reset');
 
 function updateScore() {
@@ -32,6 +35,13 @@ homeAdd3Btn.addEventListener('click', () => {
     updateScore();
 });
 
+homeRemove1Btn.addEventListener('click', () => {
+    homeScore += -1;
+    updateScore();
+});
+
+
+
 awayAdd1Btn.addEventListener('click', () => {
     awayScore += 1;
     updateScore();
@@ -45,6 +55,11 @@ awayAdd2Btn.addEventListener('click', () => {
 awayAdd3Btn.addEventListener('click', () => {
     awayScore += 3;
     updateScore();
+});
+
+awayRemove1Btn.addEventListener("click", () => {
+  awayScore += -1;
+  updateScore();
 });
 
 resetBtn.addEventListener('click', () => {
